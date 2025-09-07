@@ -106,7 +106,7 @@ function main()
             end
 
             if (ped_states.combat) and (now - ped_states.last_combat > 10000) then
-                ped_states.last_combat = false
+                ped_states.combat = false
             end
 
             if (now - ped_states.last_afk > 600000) then
